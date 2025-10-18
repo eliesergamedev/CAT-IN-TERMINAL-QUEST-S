@@ -63,24 +63,24 @@ public class RPG {
     public static int[] playerExpLevelUp = new int[100];
 
     // Criação das armas e armaduras do jogo: variáveis constantes
-    public static final String[] armorsCommon = {"Armadura de Couro", "Armadura de Ferro", "Armadura de Aco", "Armadura Magica"};
-    public static final String[] weaponsCommon = {"Espada de Madeira", "Espada de Ferro", "Espada de Aco", "Espada Magica"};
-    public static final String[] bootsCommon = {"Botas de Couro", "Botas de Ferro", "Botas de Aco", "Botas Magicas"};
-    public static final String[] helmetsCommon = {"Capacete de Couro", "Capacete de Ferro", "Capacete de Aco", "Capacete Magico"};
-    public static final String[] shieldsCommon = {"Escudo de Madeira", "Escudo de Ferro", "Escudo de Aco", "Escudo Magico"};
-    public static final String[] glovesCommon = {"Luvas de Couro", "Luvas de Ferro", "Luvas de Aco", "Luvas Magicas"};
-    public static final String[] armorsRare = {"Armadura de Dragao", "Armadura de Fenix", "Armadura de Grifo", "Armadura do Vampiro"};
-    public static final String[] weaponsRare = {"Espada do Dragao", "Espada da Fenix", "Espada do Grifo", "Espada do Vampiro"};
-    public static final String[] bootsRare = {"Botas do Dragao", "Botas da Fenix", "Botas do Grifo", "Botas do Vampiro"};
-    public static final String[] helmetsRare = {"Capacete do Dragao", "Capacete da Fenix", "Capacete do Grifo", "Capacete do Vampiro"};
-    public static final String[] shieldsRare = {"Escudo do Dragao", "Escudo da Fenix", "Escudo do Grifo", "Escudo do Vampiro"};
-    public static final String[] glovesRare = {"Luvas do Dragao", "Luvas da Fenix", "Luvas do Grifo", "Luvas do Vampiro"};
-    public static final String[] armorsEpic = {"Armadura do Imperador", "Armadura do Rei dos Titans", "Armadura do Senhor dos Dragoes", "Armadura do Anjo Renascido"};
-    public static final String[] weaponsEpic = {"Espada do Imperador", "Espada do Rei dos Titans", "Espada do Senhor dos Dragoes", "Espada do Anjo Renascido"};
-    public static final String[] bootsEpic = {"Botas do Imperador", "Botas do Rei dos Titans", "Botas do Senhor dos Dragoes", "Botas do Anjo Renascido"};
-    public static final String[] helmetsEpic = {"Capacete do Imperador", "Capacete do Rei dos Titans", "Capacete do Senhor dos Dragoes", "Capacete do Anjo Renascido"};
-    public static final String[] shieldsEpic = {"Escudo do Imperador", "Escudo do Rei dos Titans", "Escudo do Senhor dos Dragoes", "Escudo do Anjo Renascido"};
-    public static final String[] glovesEpic = {"Luvas do Imperador", "Luvas do Rei dos Titans", "Luvas do Senhor dos Dragões", "Luvas do Anjo Renascido"};
+    public static final String[] armorsCommon = {"🦺 Armadura de Couro", "🦺 Armadura de Ferro", "🦺 Armadura de Aco", "🦺 Armadura Magica"};
+    public static final String[] weaponsCommon = {"🗡 Espada de Madeira", "🗡 Espada de Ferro", "🗡 Espada de Aco", "🗡 Espada Magica"};
+    public static final String[] bootsCommon = {"👢 Botas de Couro", "👢 Botas de Ferro", "👢 Botas de Aco", "👢 Botas Magicas"};
+    public static final String[] helmetsCommon = {"🪖 Capacete de Couro", "🪖 Capacete de Ferro", "🪖 Capacete de Aco", "🪖 Capacete Magico"};
+    public static final String[] shieldsCommon = {"🛡 Escudo de Madeira", "🛡 Escudo de Ferro", "🛡 Escudo de Aco", "🛡 Escudo Magico"};
+    public static final String[] glovesCommon = {"🧤 Luvas de Couro", "🧤 Luvas de Ferro", "🧤 Luvas de Aco", "🧤 Luvas Magicas"};
+    public static final String[] armorsRare = {"🦺 Armadura de Dragao", "🦺 Armadura de Fenix", "🦺 Armadura de Grifo", "🦺 Armadura do Vampiro"};
+    public static final String[] weaponsRare = {"🗡 Espada do Dragao", "🗡 Espada da Fenix", "🗡 Espada do Grifo", "🗡 Espada do Vampiro"};
+    public static final String[] bootsRare = {"👢 Botas do Dragao", "👢 Botas da Fenix", "👢 Botas do Grifo", "👢 Botas do Vampiro"};
+    public static final String[] helmetsRare = {"🪖 Capacete do Dragao", "🪖 Capacete da Fenix", "🪖 Capacete do Grifo", "🪖 Capacete do Vampiro"};
+    public static final String[] shieldsRare = {"🛡 Escudo do Dragao", "🛡 Escudo da Fenix", "🛡 Escudo do Grifo", "🛡 Escudo do Vampiro"};
+    public static final String[] glovesRare = {"🧤 Luvas do Dragao", "🧤 Luvas da Fenix", "🧤 Luvas do Grifo", "🧤 Luvas do Vampiro"};
+    public static final String[] armorsEpic = {"🦺 Armadura do Imperador", "🦺 Armadura do Rei dos Titans", "🦺 Armadura do Senhor dos Dragoes", "🦺 Armadura do Anjo Renascido"};
+    public static final String[] weaponsEpic = {"🗡 Espada do Imperador", "🗡 Espada do Rei dos Titans", "🗡 Espada do Senhor dos Dragoes", "🗡 Espada do Anjo Renascido"};
+    public static final String[] bootsEpic = {"👢 Botas do Imperador", "👢 Botas do Rei dos Titans", "👢 Botas do Senhor dos Dragoes", "👢 otas do Anjo Renascido"};
+    public static final String[] helmetsEpic = {"🪖 Capacete do Imperador", "🪖 Capacete do Rei dos Titans", "🪖 Capacete do Senhor dos Dragoes", "🪖 Capacete do Anjo Renascido"};
+    public static final String[] shieldsEpic = {"🛡 Escudo do Imperador", "🛡 Escudo do Rei dos Titans", "🛡 Escudo do Senhor dos Dragoes", "🛡 Escudo do Anjo Renascido"};
+    public static final String[] glovesEpic = {"🧤 Luvas do Imperador", "🧤 Luvas do Rei dos Titans", "🧤 Luvas do Senhor dos Dragões", "🧤 Luvas do Anjo Renascido"};
 
     // Valor de cura da poção
     public static final int foodHealAmount = 5;
@@ -218,7 +218,7 @@ public class RPG {
                 System.out.println(YELLOW + "😺 Voce encontrou uma poção de cura, mas ja está com o inventário cheio!" + RESET);
             }
         } else if (roll >= 5 && roll <= 9) {
-            System.out.println(YELLOW + "😺 Voce encontrou " + attrValue + " moedas 🥮!" + RESET);
+            System.out.println(YELLOW + "😺 Voce encontrou " + attrValue + " moedas!" + RESET);
             playerMoney += attrValue;
             System.out.println(YELLOW + "💰 Dinheiro atual: " + playerMoney + " moedas." + RESET);
         } else if (roll >= 10 && roll <= 12) {
@@ -229,7 +229,7 @@ public class RPG {
             switch (itemType) {
                 case 0:
                     System.out.println(GREEN + "Voce encontrou uma armadura!" + RESET);
-                    System.out.println(GREEN + "Tipo do item: Armadura 🛡" + RESET);
+                    System.out.println(GREEN + "Tipo do item: Armadura 🦺" + RESET);
                     System.out.println(GREEN + "Nome do item: " + armorCommon + RESET);
                     System.out.println(GREEN + "Defesa extra: " + "+" + attrValue + RESET);
                     System.out.println();
@@ -243,18 +243,19 @@ public class RPG {
                         explorer();
                     }
                     
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerDefense -= playerArmor; // Remove a defesa do item atual
                         System.out.println(GREEN + "Voce decidiu pegar o item." + RESET);
                         playerArmor = attrValue;
                         playerDefense += playerArmor;
                         playerArmorEquipped = armorCommon;
-                        System.out.println(GREEN + "Tipo do item: Armadura 🛡" + RESET);
+                        System.out.println(GREEN + "Tipo do item: Armadura 🦺" + RESET);
                         System.out.println(GREEN + "Nome do item: " + playerArmorEquipped + RESET);
                         System.out.println(GREEN + "Defesa extra: " + "+" + playerArmor + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -264,7 +265,7 @@ public class RPG {
                     break;
                 case 1:
                     System.out.println(GREEN + "Voce encontrou uma arma!" + RESET);
-                    System.out.println(GREEN + "Tipo do item: Arma ⚔" + RESET);
+                    System.out.println(GREEN + "Tipo do item: Arma 🗡" + RESET);
                     System.out.println(GREEN + "Nome do item: " + weaponCommon + RESET);
                     System.out.println(GREEN + "Ataque extra: " + "+" + attrValue + RESET);
                     System.out.println();
@@ -278,18 +279,19 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerAttack -= playerWeapon; // Remove o ataque do item atual
                         System.out.println(GREEN + "Voce decidiu pegar o item." + RESET);
                         playerWeapon = attrValue;
                         playerAttack += playerWeapon;
                         playerWeaponEquipped = weaponCommon;
-                        System.out.println(GREEN + "Tipo do item: Arma ⚔" + RESET);
+                        System.out.println(GREEN + "Tipo do item: Arma 🗡" + RESET);
                         System.out.println(GREEN + "Nome do item: " + playerWeaponEquipped + RESET);
                         System.out.println(GREEN + "Ataque extra: " + "+" + playerWeapon + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -313,10 +315,10 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerAgility -= playerBoots; // Remove a agilidade do item atual
                         System.out.println(GREEN + "Voce decidiu pegar o item." + RESET);
                         playerBoots = attrValue;
@@ -325,6 +327,7 @@ public class RPG {
                         System.out.println(GREEN + "Tipo do item: Botas 👢" + RESET);
                         System.out.println(GREEN + "Nome do item: " + playerBootsEquipped + RESET);
                         System.out.println(GREEN + "Agilidade extra: " + "+" + playerBoots + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -348,10 +351,10 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerDefense -= playerHelmet; // Remove a defesa do item atual
                         System.out.println(GREEN + "Voce decidiu pegar o item." + RESET);
                         playerHelmet = attrValue;
@@ -360,6 +363,7 @@ public class RPG {
                         System.out.println(GREEN + "Tipo do item: Capacete 🪖" + RESET);
                         System.out.println(GREEN + "Nome do item: " + playerHelmetEquipped + RESET);
                         System.out.println(GREEN + "Defesa extra: " + "+" + playerHelmet + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -383,10 +387,10 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerDefense -= playerShield; // Remove a defesa do item atual
                         System.out.println(GREEN + "Voce decidiu pegar o item." + RESET);
                         playerShield = attrValue;
@@ -395,6 +399,7 @@ public class RPG {
                         System.out.println(GREEN + "Tipo do item: Escudo 🛡" + RESET);
                         System.out.println(GREEN + "Nome do item: " + playerShieldEquipped + RESET);
                         System.out.println(GREEN + "Defesa extra: " + "+" + playerShield + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -418,10 +423,10 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerAttack -= playerGloves; // Remove o ataque do item atual
                         System.out.println(GREEN + "Voce decidiu pegar o item." + RESET);
                         playerGloves = attrValue;
@@ -430,6 +435,7 @@ public class RPG {
                         System.out.println(GREEN + "Tipo do item: Luvas 🧤" + RESET);
                         System.out.println(GREEN + "Nome do item: " + playerGlovesEquipped + RESET);
                         System.out.println(GREEN + "Ataque extra: " + "+" + playerGloves + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -445,7 +451,7 @@ public class RPG {
 
             switch (itemType) {
                 case 0:
-                    System.out.println(BLUE + "Tipo do item: Armadura 🛡" + RESET);
+                    System.out.println(BLUE + "Tipo do item: Armadura 🦺" + RESET);
                     System.out.println(BLUE + "Nome do item: " + armorRare + RESET);
                     System.out.println(BLUE + "Defesa extra: " + "+" + attrValue * 2 + RESET);
                     System.out.println();
@@ -459,18 +465,19 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerDefense -= playerArmor; // Remove a defesa do item atual
                         System.out.println(BLUE + "Voce decidiu pegar o item." + RESET);
                         playerArmor = attrValue * 2;
                         playerDefense += playerArmor;
                         playerArmorEquipped = armorsRare[rand.nextInt(4)];
-                        System.out.println(BLUE + "Tipo do item: Armadura 🛡" + RESET);
+                        System.out.println(BLUE + "Tipo do item: Armadura 🦺" + RESET);
                         System.out.println(BLUE + "Nome do item: " + playerArmorEquipped + RESET);
                         System.out.println(BLUE + "Defesa extra: " + "+" + playerArmor + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -479,7 +486,7 @@ public class RPG {
 
                     break;
                 case 1:
-                    System.out.println(BLUE + "Tipo do item: Arma ⚔" + RESET);
+                    System.out.println(BLUE + "Tipo do item: Arma 🗡" + RESET);
                     System.out.println(BLUE + "Nome do item: " + weaponRare + RESET);
                     System.out.println(BLUE + "Ataque extra: " + "+" + attrValue * 2 + RESET);
                     System.out.println();
@@ -493,18 +500,19 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerAttack -= playerWeapon; // Remove o ataque do item atual
                         System.out.println(BLUE + "Voce decidiu pegar o item." + RESET);
                         playerWeapon = attrValue * 2;
                         playerAttack += playerWeapon;
                         playerWeaponEquipped = weaponsRare[rand.nextInt(4)];
-                        System.out.println(BLUE + "Tipo do item: Arma ⚔" + RESET);
+                        System.out.println(BLUE + "Tipo do item: Arma 🗡" + RESET);
                         System.out.println(BLUE + "Nome do item: " + playerWeaponEquipped + RESET);
                         System.out.println(BLUE + "Ataque extra: " + "+" + playerWeapon + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -527,10 +535,10 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerAgility -= playerBoots; // Remove a agilidade do item atual
                         System.out.println(BLUE + "Voce decidiu pegar o item." + RESET);
                         playerBoots = attrValue * 2;
@@ -539,6 +547,7 @@ public class RPG {
                         System.out.println(BLUE + "Tipo do item: Botas 👢" + RESET);
                         System.out.println(BLUE + "Nome do item: " + playerBootsEquipped + RESET);
                         System.out.println(BLUE + "Agilidade extra: " + "+" + playerBoots + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -561,10 +570,10 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerDefense -= playerHelmet; // Remove a defesa do item atual
                         System.out.println(BLUE + "Voce decidiu pegar o item." + RESET);
                         playerHelmet = attrValue * 2;
@@ -573,6 +582,7 @@ public class RPG {
                         System.out.println(BLUE + "Tipo do item: Capacete 🪖" + RESET);
                         System.out.println(BLUE + "Nome do item: " + playerHelmetEquipped + RESET);
                         System.out.println(BLUE + "Defesa extra: " + "+" + playerHelmet + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -595,10 +605,10 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerDefense -= playerShield; // Remove a defesa do item atual
                         System.out.println(BLUE + "Voce decidiu pegar o item." + RESET);
                         playerShield = attrValue * 2;
@@ -607,6 +617,7 @@ public class RPG {
                         System.out.println(BLUE + "Tipo do item: Escudo 🛡" + RESET);
                         System.out.println(BLUE + "Nome do item: " + playerShieldEquipped + RESET);
                         System.out.println(BLUE + "Defesa extra: " + "+" + playerShield + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -629,10 +640,10 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerAttack -= playerGloves; // Remove o ataque do item atual
                         System.out.println(BLUE + "Voce decidiu pegar o item." + RESET);
                         playerGloves = attrValue * 2;
@@ -641,6 +652,7 @@ public class RPG {
                         System.out.println(BLUE + "Tipo do item: Luvas 🧤" + RESET);
                         System.out.println("Nome do item: " + playerGlovesEquipped + RESET);
                         System.out.println(BLUE + "Ataque extra: " + "+" + playerGloves + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -657,7 +669,7 @@ public class RPG {
             switch (itemType) {
                 case 0:
                     System.out.println(PURPLE + "Voce encontrou uma armadura!" + RESET);
-                    System.out.println(PURPLE + "Tipo do item: Armadura 🛡" + RESET);
+                    System.out.println(PURPLE + "Tipo do item: Armadura 🦺" + RESET);
                     System.out.println(PURPLE + "Nome do item: " + armorEpic + RESET);
                     System.out.println(PURPLE + "Defesa extra: " + "+" + attrValue * 3 + RESET);
                     System.out.println();
@@ -671,18 +683,19 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerDefense -= playerArmor; // Remove a defesa do item atual
                         System.out.println(PURPLE + "Voce decidiu pegar o item." + RESET);
                         playerArmor = attrValue * 3;
                         playerDefense += playerArmor;
                         playerArmorEquipped = armorsEpic[rand.nextInt(4)];
-                        System.out.println(PURPLE + "Tipo do item: Armadura 🛡" + RESET);
+                        System.out.println(PURPLE + "Tipo do item: Armadura 🦺" + RESET);
                         System.out.println(PURPLE + "Nome do item: " + playerArmorEquipped + RESET);
                         System.out.println(PURPLE + "Defesa extra: " + "+" + playerArmor + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -691,7 +704,7 @@ public class RPG {
 
                     break;
                 case 1:
-                    System.out.println(PURPLE + "Tipo do item: Arma ⚔" + RESET);
+                    System.out.println(PURPLE + "Tipo do item: Arma 🗡" + RESET);
                     System.out.println(PURPLE + "Nome do item: " + weaponEpic + RESET);
                     System.out.println(PURPLE + "Ataque extra: " + "+" + attrValue * 3 + RESET);
                     System.out.println();
@@ -705,18 +718,19 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerAttack -= playerWeapon; // Remove o ataque do item atual
                         System.out.println(PURPLE + "Voce decidiu pegar o item." + RESET);
                         playerWeapon = attrValue * 3;
                         playerAttack += playerWeapon;
                         playerWeaponEquipped = weaponsEpic[rand.nextInt(4)];
-                        System.out.println(PURPLE + "Tipo do item: Arma ⚔" + RESET);
+                        System.out.println(PURPLE + "Tipo do item: Arma 🗡" + RESET);
                         System.out.println(PURPLE + "Nome do item: " + playerWeaponEquipped + RESET);
                         System.out.println(PURPLE + "Ataque extra: " + "+" + playerWeapon + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -739,10 +753,10 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerAgility -= playerBoots; // Remove a agilidade do item atual
                         System.out.println(PURPLE + "Voce decidiu pegar o item." + RESET);
                         playerBoots = attrValue * 3;
@@ -751,6 +765,7 @@ public class RPG {
                         System.out.println(PURPLE + "Tipo do item: Botas 👢" + RESET);
                         System.out.println(PURPLE + "Nome do item: " + playerBootsEquipped + RESET);
                         System.out.println(PURPLE + "Agilidade extra: " + "+" + playerBoots + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -773,10 +788,10 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerDefense -= playerHelmet; // Remove a defesa do item atual
                         System.out.println(PURPLE + "Voce decidiu pegar o item." + RESET);
                         playerHelmet = attrValue * 3;
@@ -785,6 +800,7 @@ public class RPG {
                         System.out.println(PURPLE + "Tipo do item: Capacete 🪖" + RESET);
                         System.out.println(PURPLE + "Nome do item: " + playerHelmetEquipped + RESET);
                         System.out.println(PURPLE + "Defesa extra: " + "+" + playerHelmet + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -807,10 +823,10 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerDefense -= playerShield; // Remove a defesa do item atual
                         System.out.println(PURPLE + "Voce decidiu pegar o item." + RESET);
                         playerShield = attrValue * 3;
@@ -819,6 +835,7 @@ public class RPG {
                         System.out.println(PURPLE + "Tipo do item: Escudo 🛡" + RESET);
                         System.out.println(PURPLE + "Nome do item: " + playerShieldEquipped + RESET);
                         System.out.println(PURPLE + "Defesa extra: " + "+" + playerShield + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -841,10 +858,10 @@ public class RPG {
                         explorer();
                     }
 
-                    if (!String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    if (!String.valueOf(choice).toLowerCase().equals("s")) {
                         System.out.println(YELLOW + "Voce decidiu nao pegar o item." + RESET);
                         break;
-                    } else if (String.valueOf(choice).toLowerCase().trim().equals('s')) {
+                    } else if (String.valueOf(choice).toLowerCase().equals("s")) {
                         playerAttack -= playerGloves; // Remove o ataque do item atual
                         System.out.println(PURPLE + "Voce decidiu pegar o item." + RESET);
                         playerGloves = attrValue * 3;
@@ -853,6 +870,7 @@ public class RPG {
                         System.out.println(PURPLE + "Tipo do item: Luvas 🧤" + RESET);
                         System.out.println("Nome do item: " + playerGlovesEquipped + RESET);
                         System.out.println(PURPLE + "Ataque extra: " + "+" + playerGloves + RESET);
+                        statusPlayer();
                     } else {
                         System.out.println(RED + "Entrada invalida. Por favor, digite 's' para sim ou 'n' para nao." + RESET);
                         System.out.println(RED + "Infelizmente, voce perdeu o item..." + RESET);
@@ -1028,6 +1046,9 @@ public class RPG {
         System.out.println(" - " + playerArmorEquipped + " (Defesa: +" + playerArmor + ")");
         System.out.println(" - " + playerWeaponEquipped + " (Ataque: +" + playerWeapon + ")");
         System.out.println(" - " + playerBootsEquipped + " (Agilidade: +" + playerBoots + ")");
+        System.out.println(" - " + playerHelmetEquipped + " (Defesa: +" + playerHelmet + ")");
+        System.out.println(" - " + playerShieldEquipped + " (Defesa: +" + playerShield + ")");
+        System.out.println(" - " + playerGlovesEquipped + " (Ataque: +" + playerGloves + ")");
         System.out.println("-----------------------------------------------------------" + RESET + "\n");
     }
 
@@ -1210,11 +1231,7 @@ public class RPG {
         start();
         pause();
 
-        store();
-        useFood();
-        useFood();
-        useFood();
-        statusPlayer();
+        
         
         System.out.println();
         System.out.println("Cat é um gato aventureiro que vive em uma pequena vila.");
