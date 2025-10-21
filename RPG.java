@@ -1081,7 +1081,8 @@ public class RPG {
         System.out.println("1. Atacar ⚔");
         System.out.println("2. Defender 🛡");
         System.out.println("3. Inventário 🎒");
-        System.out.println("4. Fugir 💨");
+        System.out.println("4. Comida 🍣");
+        System.out.println("5. Fugir 💨");
         System.out.println("--------------------------------------------------------------" + RESET);
 
         optionBattle = msgInteractive("Digite o número da ação desejada: ");
@@ -1096,8 +1097,8 @@ public class RPG {
         double chanceAttack = (double) playerAgility / (playerAgility + enemyAgility); // Calcula a chance de acerto com base na agilidade
         double chanceSkip = (double) (playerAgility * 1.2) / (playerAgility + enemyAgility); // Calcula a chance de fuga com base na agilidade, com um bônus de 20% para o jogador
 
-        statusEnemy(enemyName, enemyHealth, enemyAttack, enemyDefense, enemyAgility);
         hudPlayer();
+        statusEnemy(enemyName, enemyHealth, enemyAttack, enemyDefense, enemyAgility);
         
         // Lógica de batalha aqui
         switch (menuBattle()) {
@@ -1185,6 +1186,29 @@ public class RPG {
                 battle(enemyName, enemyHealth, enemyAttack, enemyDefense,enemyAgility, enemyExp, enemyMoney);
                 break;
             case 4:
+                System.out.println("---------------------- USAR COMIDA ----------------------");
+                System.out.println("🍣 Comida = " + playerFoods + "\n");
+                System.out.println("1. Sim " + GREEN + "✔" + RESET);
+                System.out.println("2. Não ❌");
+                System.out.println("----------------------------------------------------------");
+                int useFoodOption = Integer.parseInt(msgInteractive("Selecione a opcao desejada: "));
+                
+                switch(useFoodOption) {
+                    case 1:
+                        useFood();
+                        battle(enemyName, enemyHealth, enemyAttack, enemyDefense,enemyAgility, enemyExp, enemyMoney);
+                        break;
+                    case 2:
+                        System.out.println(YELLOW + "Voce decidiu não usar comida." + RESET);
+                        battle(enemyName, enemyHealth, enemyAttack, enemyDefense,enemyAgility, enemyExp, enemyMoney);
+                        break;
+                    default:
+                        System.out.println(RED + "Opção inválida. Tente novamente." + RESET);
+                        battle(enemyName, enemyHealth, enemyAttack, enemyDefense,enemyAgility, enemyExp, enemyMoney);
+                        break;
+                }
+                break;
+            case 5:
                 System.out.println(playerLabelSurprised + "Preciso fugir!");
                 // Lógica de fuga aqui
                 if (roll <= chanceSkip) {
@@ -1231,7 +1255,7 @@ public class RPG {
         start();
         pause();
 
-        
+        battle("Slime Verde", 15, 5, 2, 3, 20, 10);
         
         System.out.println();
         System.out.println("Cat é um gato aventureiro que vive em uma pequena vila.");
