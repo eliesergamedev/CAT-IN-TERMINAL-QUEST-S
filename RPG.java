@@ -1250,6 +1250,118 @@ public class RPG {
         System.out.println();
         System.out.println("               (ouça o vento e os grilos... ♫)");
     }
+
+    public static void villageScene(String name) {
+        System.out.println("           |~~~~~~~|      |~~~~~~~|      |~~~~~~~|");
+        System.out.println("           |       |      |       |      |       |");
+        System.out.println("           |  []   |      |  []   |      |  []   |");
+        System.out.println("           |       |      |       |      |       |");
+        System.out.println("          /|_______|\\    /|_______|\\    /|_______|\\");
+        System.out.println("         /_|_______|_\\  /_|_______|_\\  /_|_______|_\\");
+        System.out.println();
+        System.out.println("        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("            Voce está na vila "+name+".");
+        System.out.println();
+        System.out.println("               (ouça as pessoas conversando... ♫)");
+    }
+
+    public static void marshScene(String name) {
+        System.out.println("           ~  ~  ~      ~  ~  ~      ~  ~  ~");
+        System.out.println("         ~~~~~~~~~~~  ~~~~~~~~~~~  ~~~~~~~~~~~");
+        System.out.println("       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println();
+        System.out.println("        Voce está no pântano "+name+".");
+        System.out.println();
+        System.out.println("               (ouça os sapos coaxando... ♫)");
+    }
+
+    public static void gladeScene(String name) {
+        System.out.println("           .     .      .     .      .     .");
+        System.out.println("        .     .     .     .     .     .     .");
+        System.out.println("           .     .      .     .      .     .");
+        System.out.println("        .     .     .     .     .     .     .");
+        System.out.println("                       _._");
+        System.out.println("                    .-\"   \"-.");
+        System.out.println("                   /  .- .-.  \\");
+        System.out.println("                  /  /  | |  \\  \\");
+        System.out.println("                 /  /   |_|   \\  \\");
+        System.out.println("                /  /    ___    \\  \\");
+        System.out.println("               /  /   .`   `.   \\  \\");
+        System.out.println("         _..--'  /   /       \\   \\  `--.._");
+        System.out.println("      .-'  _.-' /   /  __ __  \\   \\  `-._  `-.");
+        System.out.println("    .'  .-'    /   /  /  V  \\  \\   \\     `-.  `.");
+        System.out.println("   /   /      /   /  /       \\  \\   \\       \\   \\");
+        System.out.println("  /   /      /   /  /  /\\ /\\  \\  \\   \\       \\   \\");
+        System.out.println(" /   /      /   /  /  /  V  \\  \\  \\   \\       \\   \\");
+        System.out.println("/___/______/___/__/__/_______\\__\\__\\___\\_______\\___\\");
+        System.out.println();
+        System.out.println("        Voce está na clareira "+name+".");
+        System.out.println();
+        System.out.println("               (ouça os pássaros cantando... ♫)");
+    }
+
+    public static void caveScene(String name) {
+        System.out.println("           *********      *********      *********");
+        System.out.println("         *************  *************  *************");
+        System.out.println("       *******************************");
+        System.out.println("     *******************************");
+        System.out.println();
+        System.out.println("        Voce está na caverna "+name+".");
+        System.out.println();
+        System.out.println("               (ouça o eco das gotas de água... ♫)");
+    }
+
+    public static void waterfallScene(String name) {
+        System.out.println("                         ^    ^    ^");
+        System.out.println("                        /|\\  /|\\  /|\\");
+        System.out.println("                       //|\\\\//|\\\\//|\\\\");
+        System.out.println("                      ///|\\\\\\///|\\\\\\///|\\\\\\");
+        System.out.println("                     ////|\\\\\\\\///|\\\\\\\\///|\\\\\\\\");
+        System.out.println("                    /////|\\\\\\\\\\///|\\\\\\\\\\///|\\\\\\\\\\");
+        System.out.println("                   /////~~~~~~~~~~~~~~~~~~~~~~~~~\\\\\\\\\\");
+        System.out.println("                  /////~~~~~~~~~~~~~~~~~~~~~~~~~~~\\\\\\\\\\");
+        System.out.println("                 /////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\\\\\\\\\");
+        System.out.println("                /////~~~~~~~~~~💧💧💧~~~~~~~~~~~~~~~\\\\\\\\\\");
+        System.out.println("               /////~~~~~~~~💧💧💧💧💧~~~~~~~~~~~~~~~\\\\\\\\\\");
+        System.out.println("              /////~~~~~~~💧💧💧💧💧💧💧~~~~~~~~~~~~~~~\\\\\\\\\\");
+        System.out.println("             /////~~~~~~~💧💧💧💧💧💧💧💧~~~~~~~~~~~~~~~\\\\\\\\\\");
+        System.out.println("            /////~~~~~~💧💧💧💧💧💧💧💧💧~~~~~~~~~~~~~~~\\\\\\\\\\");
+        System.out.println("           /////~~~~~💧💧💧💧💧💧💧💧💧💧~~~~~~~~~~~~~~~\\\\\\\\\\");
+        System.out.println("          /////~~~~~💧💧💧💧💧💧💧💧💧💧💧~~~~~~~~~~~~~~~\\\\\\\\\\");
+        System.out.println("         /////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\\\\\\\\\");
+        System.out.println("        /////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\\\\\\\\\");
+        System.out.println("       /////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\\\\\\\\\");
+        System.out.println("      ////_____________________________________________\\\\\\\\");
+        System.out.println("     ////_______________________________________________\\\\\\\\");
+        System.out.println("    ////~~~~~~~~~~~🌊🌊🌊  RIO AZUL  🌊🌊🌊~~~~~~~~~~~~~~\\\\\\\\");
+        System.out.println("   ////~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\\\\\\\\");
+        System.out.println("  ///////////////////////////////////////////////////////////");
+        System.out.println();
+        System.out.println("        Voce está na cachoeira "+name+".");
+        System.out.println();
+        System.out.println("               (ouça o som da água caindo... ♫)");
+    }
+
+    public static void ancienttreeScene(String name) {
+        System.out.println("               &&& &&  & &&");
+        System.out.println("           && &\\/&\\|& ()|/ @, &&");
+        System.out.println("           &\\/(/&/&||/& /_/)_&/_&");
+        System.out.println("        &() &\\/&|()|/&\\/ '%\" & ()");
+        System.out.println("       &_\\_&&_\\ |& |&&/&__%_/_& &&");
+        System.out.println("     &&   && & &| &| /& & % ()& /&&");
+        System.out.println("      ()&_---()&\\&\\|&&-&&--%---()~");
+        System.out.println("          &&     \\|||\n" +
+                           "                  |||\n" +
+                           "                  |||\n" +
+                           "                  |||\n" +
+                           "            , -=-~  .-^- _");
+        System.out.println();
+        System.out.println("        Voce está na árvore antiga "+name+".");
+        System.out.println();
+        System.out.println("               (ouça o farfalhar das folhas... ♫)");
+    }
     
     public static void main(String[] args) throws InterruptedException {
         start();
