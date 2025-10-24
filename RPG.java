@@ -25,6 +25,10 @@ public class RPG {
     // Controlador de primeira vez que o jogador ataca
     public static boolean firstAttack = true;
 
+    // Variável que simula ser um dado de 20 lados
+    public static int d20;
+    public static Random randD20 = new Random();
+
     // Criação do personagem principal do jogo
     public static String playerName = "Cat";
     public static String playerLabelIdle = "😾(Cat): ";
@@ -87,15 +91,47 @@ public class RPG {
 
     // Criação dos inimigos do jogo: variáveis constantes
     
-    // Ork Dog
-    public static final String orkDogName = "Ork Dog";
-    public static final String orkDogLabel = "🐶(Ork Dog): ";
-    public static final int orkDogHealth = 10;
-    public static final int orkDogAttack = 5;
-    public static final int orkDogDefense = 2;
-    public static final int orkDogExp = 51;
-    public static final int orkDogMoney = 10;
-    public static final int orkDogAgility = 2;
+    // Dog Guerreiro
+    public static final String warriorDogName = "Dog Guerreiro";
+    public static final String warriorDogLabel = "🐶(Dog Guerreiro): ";
+    public static final int warriorDogHealth = 10;
+    public static final int warriorDogAttack = 5;
+    public static final int warriorDogDefense = 2;
+    public static final int warriorDogExp = 51;
+    public static final int warriorDogMoney = 10;
+    public static final int warriorDogAgility = 2;
+
+    // Gato Impetuoso
+    public static final String impetuousCatName = "Gato Impetuoso";
+    public static final String impetuousCatLabel = "🐱(Gato Impetuoso): ";
+    public static final int impetuousCatHealth = 15;
+    public static final int impetuousCatAttack = 7;
+    public static final int impetuousCatDefense = 3;
+    public static final int impetuousCatExp = 75;
+    public static final int impetuousCatMoney = 15;
+    public static final int impetuousCatAgility = 3;
+
+    // Rato Feroz
+    public static final String fierceRatName = "Rato Feroz";
+    public static final String fierceRatLabel = "🐭(Rato Feroz): ";
+    public static final int fierceRatHealth = 20;
+    public static final int fierceRatAttack = 10;
+    public static final int fierceRatDefense = 5;
+    public static final int fierceRatExp = 100;
+    public static final int fierceRatMoney = 20;
+    public static final int fierceRatAgility = 4;
+
+    // Coelho Selvagem
+    public static final String wildRabbitName = "Coelho Selvagem";
+    public static final String wildRabbitLabel = "🐰(Coelho Selvagem): ";
+    public static final int wildRabbitHealth = 25;
+    public static final int wildRabbitAttack = 12;
+    public static final int wildRabbitDefense = 6;
+    public static final int wildRabbitExp = 130;
+    public static final int wildRabbitMoney = 25;
+    public static final int wildRabbitAgility = 5;
+
+    // Inicializa o array de experiência necessária para cada nível
 
     public static void initializeExpList() {
         // Inicializa o array de experiência necessária para cada nível
@@ -1000,9 +1036,6 @@ public class RPG {
                 System.out.println(GREEN + "#                                                        #" + RESET);
                 System.out.println(GREEN + "#                                                        #" + RESET);
                 System.out.println(GREEN + "----------------------------------------------------------" + RESET);
-                System.out.println();
-                System.out.println(playerLabelTrusting + "QUE A AVENTURA COMECE!");
-                System.out.println();
                 break;
             case 2:
                 clearScreen();
@@ -1365,59 +1398,116 @@ public class RPG {
     
     public static void main(String[] args) throws InterruptedException {
         start();
-        pause();
-
-        battle("Slime Verde", 15, 5, 2, 3, 20, 10);
         
         System.out.println();
-        System.out.println("Cat é um gato aventureiro que vive em uma pequena vila.");
-        System.out.println("Ele adora explorar lugares novos e enfrentar desafios.");
-        System.out.println("Um dia, ele decide partir em uma grande aventura pela floresta.");
+        System.out.println("Existe uma floreta magica, conduzida pelo efeito magico de expandir a inteligencia");
+        System.out.println("dos animais. Resultado de uma pedra magica, cobicada por muitos aventureiros.");
+        System.out.println("Diz a lenda que quem encontrar essa pedra, tera sua inteligencia ampliada.");
+        System.out.println("Muitos tentaram encontrar essa pedra, mas poucos conseguiram.");
+        System.out.println("Voce, sabe que se essa pedra for capturada por pessoas erradas, o mundo pode sofrer");
+        System.out.println("consequencias terriveis. Por isso, voce decide embarcar nessa aventura para encontrar");
+        System.out.println("a pedra magica antes que seja tarde demais.");
         System.out.println();
         
-        System.out.println(playerLabelTrusting + "Estou pronto para a aventura!");
-        pause();
-        System.out.println(playerLabelIdle + "Estava escutando os humanos aqui de casa, falando esses dias sobre uma floresta misteriosa...");
-        pause();
-        System.out.println(playerLabelHappy + "Dizem que lá existem criaturas perigosas, mas também muitos tesouros escondidos!");
-        pause();
-        System.out.println(playerLabelIdle + "Eu preciso ir até lá e descobrir o que há de verdade nisso tudo!");
-        pause();
+        playerName = msgInteractive("Antes de começar, qual é o seu nome, aventureiro? ");
         System.out.println();
+        System.out.println(GREEN + "Bem-vindo, " + playerName + "! Que a aventura comece!" + RESET);
 
-        System.out.println("Jerry(dono da casa onde vive cat), resolve ir ao super mercado para fazer as compras da semana.");
-        System.out.println("Porém, ao sair de casa, ele percebe que esqueceu a carteira.");
-        System.out.println("Ao entrar em casa, acaba deixando a porta aberta. Afinal, seria apenas um instante.");
-        System.out.println("Cat, que estava na janela, pensando em como poderia dar um jeito de escapar de casa, vê a oportunidade perfeita.");
-        System.out.println("Ele aproveita que Jerry está distraído e sai correndo pela porta aberta.");
+        playerLabelIdle = "😾(" + playerName + "): ";
+        playerLabelHappy = "😺(" + playerName + "): ";
+        playerLabelSmile = "😸(" + playerName + "): ";
+        playerLabelLovely = "😻(" + playerName + "): ";
+        playerLabelTrusting = "😼(" + playerName + "): ";
+        playerLabelSad = "😿(" + playerName + "): ";
+        playerLabelSurprised = "🙀(" + playerName + "): ";
         pause();
+
         System.out.println();
-        System.out.println("               (o silência da rua noturna... ☁🌑)");
-        System.out.println();
-        pause();
-        System.out.println("Cat corre o mais rápido que pode, sem olhar para trás, quando derrepente se depara na virada da última rua com a casa de um cão muito feroz.");
-        System.out.println("O cão late ferozmente, e Cat percebe que não tem mais como voltar para casa.");
+        System.out.println(playerName + ", e um gato acostumado com a vida na rua, agil e esperto.");
+        System.out.println("Mesmo tendo uma vida dificil, ele sempre mantem uma atitude positiva e curiosa.");
+        System.out.println("Ele e conhecido por sua habilidade de se adaptar rapidamente a novas situacoes e");
+        System.out.println("por sua determinação em alcancar seus objetivos, nao importa o quao desafiadores eles sejam.");
         System.out.println();
         pause();
 
-        System.out.println(orkDogLabel + "GRRRRRRRR! Quem é Voce e o que está fazendo na minha rua?");
+        System.out.println(playerLabelTrusting + " Estou pronto para comecar minha jornada!");
+        System.out.println(playerLabelIdle + " Finalmente vou sair das ruas e explorar o mundo!");
         pause();
-        System.out.println(playerLabelSurprised + "Eu... eu sou o Cat. Estou a caminho da floresta.");
+
+        System.out.println(playerName + " parte em sua aventura em busca da pedra magica que pode ampliar a inteligencia dos animais.");
+        System.out.println("Ao longo do caminho, ele enfrentara desafios, fara novos amigos e descobrira segredos ocultos.");
+        System.out.println("Sera uma jornada emocionante e cheia de surpresas!");
+        System.out.println();
         pause();
-        System.out.println(playerLabelIdle + "Eu só queria passar por aqui, não quero briga.");
+
+        System.out.println(playerLabelHappy + " Cheguei na entrada da floresta magica. Hora de comecar a busca pela pedra magica!");
+        System.out.println();
         pause();
-        System.out.println(playerLabelLovely + "Dizem que essa floresta é cheia de mistérios fantásticos!");
+
+        forestScene("Encantada");
+        System.out.println();
         pause();
-        System.out.println(orkDogLabel + "Hmph! Voce parece um gato fraco. Não vai durar nada na floresta.");
+
+        System.out.println(playerLabelIdle + " A floresta e linda! Mal posso esperar para explorar cada canto dela.");
+        System.out.println();
+
+        System.out.println(playerLabelSmile + " Quem sabe que tipo de criaturas magicas eu vou encontrar aqui?");
+        System.out.println();
         pause();
-        System.out.println(orkDogLabel + "Quando Voce entrar na floresta, irá encontrar um universo paralelo cheio de perigos.");
+
+        System.out.println(warriorDogLabel + "GRRRR! Quem e voce e o que esta fazendo na minha floresta?");
         pause();
-        System.out.println(playerLabelSurprised + "Um universo paralelo? Sério?");
+        System.out.println(playerLabelSurprised + "QUEEE! Um cachorro guerreiro falante!");
+        System.out.println(playerLabelSurprised + "Eu consigo entender o que voce esta dizendo!");
         pause();
-        System.out.println(orkDogLabel + "Sim, e eu sou o guardião dessa floresta. Se quiser passar, terá que me enfrentar!");
+        System.out.println(warriorDogLabel + "Sim! Todo animal que entra na floresta encantada, passa a falar a lingua dos humanos.");
         pause();
-        System.out.println(orkDogLabel + "Somente assim, Voce provará ser digno de entrar na floresta.");
+        System.out.println(playerLabelTrusting + "Uau! Isso e incrivel! Eu sou " + playerName + ", estou aqui para impedir que a pedra magica caia em maos erradas.");
         pause();
-        System.out.println(playerLabelTrusting + "Muito bem, eu aceito o desafio!");
+        System.out.println(warriorDogLabel + "Eu sou Rex, o guardiao desta floresta. Se voce quer a pedra magica, tera que me derrotar em batalha primeiro!");
+        System.out.println(warriorDogLabel + "Somente assim, voce mostrara que esta pronto para proteger a pedra e superar os desafios que virao.");
+        pause();
+
+        System.out.println(playerLabelTrusting + "Entendido, Rex! Estou pronto para o desafio. Vamos lutar!");
+        System.out.println();
+        pause();
+
+        battle("Rex, o Cachorro Guerreiro", 12, 6, 2, 4, 50, 20);
+
+        System.out.println(playerLabelHappy + "Ufa! Consegui derrotar Rex!");
+        pause();
+
+        d20 = randD20.nextInt(21); // Gera um número aleatório entre 0 e 20
+
+        if (d20 >= 15) {
+            System.out.println(PURPLE + "Voce encontrou uma caverna secreta na floresta!" + RESET);
+            pause();
+            caveScene("Secreta");
+            System.out.println();
+            pause();
+            explorer();
+            System.out.println();
+        }
+
+        System.out.println(playerName + " continua sua jornada pela floresta encantada, enfrentando desafios e descobrindo segredos a cada passo.");
+        System.out.println("Com coragem e determinação, ele esta cada vez mais perto de encontrar a pedra magica e proteger o mundo de seu poder.");
+        System.out.println();
+        pause();
+
+        System.out.println(playerLabelIdle + " Rex mencionou durante a batalha que existem 4 guerreiros da floresta.");
+        System.out.println(playerLabelIdle + " Quem for capaz de derrotar os 4 guerreiros, podera acessar o local onde a pedra magica esta escondida.");
+        System.out.println(playerLabelIdle + " Preciso encontrar e derrotar esses guerreiros para continuar minha jornada.");
+        System.out.println();
+        pause();
+
+        System.out.println(playerLabelIdle + " Olha, aquele esquilo pode me dar alguma informação.");
+        System.out.println();
+        pause();
+
+        System.out.println("🐿: Oi, aventureiro! Só tenho uma utilidade neste lugar. Negociar!");
+        store();
+        System.out.println();
+        pause();
+        
     }
 }
