@@ -152,7 +152,7 @@ public class RPG {
         System.out.println("\n" + YELLOW + "---------------------- LOJA DO ESQUILO 🐿 ----------------------------");
         System.out.println("Bem-vindo a loja! O que voce gostaria de comprar?");
         System.out.println("1. Comida (5 moedas) 🍣 +" + foodHealAmount);
-        System.out.println("2. Bolsa de comida: +1 espaco para pocoes (10 moedas) 🎒");
+        System.out.println("2. Bolsa de comida: +1 espaco para comida (10 moedas) 🎒");
         System.out.println("3. Sair da Loja 🚪");
         System.out.println("----------------------------------------------------------------" + RESET);
 
@@ -164,12 +164,12 @@ public class RPG {
                 if (playerMoney >= 5 && playerFoods < playerLimitFoods) {
                     playerMoney -= 5;
                     playerFoods++;
-                    System.out.println(GREEN + "Voce comprou uma pocao de cura! Agora voce tem " + playerFoods + " pocao(oes) de cura." + RESET);
+                    System.out.println(GREEN + "Voce comprou uma comida! Agora voce tem " + playerFoods + " comidas." + RESET);
                     System.out.println(GREEN + "Dinheiro restante: " + playerMoney + " moedas." + RESET);
                 } else if (playerFoods > playerLimitFoods) {
-                    System.out.println(RED + "Voce ja esta com o inventario cheio de poções de cura!" + RESET);
+                    System.out.println(RED + "Voce ja esta com o inventario cheio de comidas!" + RESET);
                 } else {
-                    System.out.println(RED + "Voce nao tem dinheiro suficiente para comprar uma pocao de cura!" + RESET);
+                    System.out.println(RED + "Voce nao tem dinheiro suficiente para comprar uma comida!" + RESET);
                 }
                 store();
                 break;
@@ -177,10 +177,10 @@ public class RPG {
                 if (playerMoney >= 10) {
                     playerMoney -= 10;
                     playerLimitFoods++;
-                    System.out.println(GREEN + "Voce comprou uma bolsa de pocoes! Agora voce pode carregar " + playerLimitFoods + " pocoes de cura." + RESET);
+                    System.out.println(GREEN + "Voce comprou uma bolsa de comida! Agora voce pode carregar " + playerLimitFoods + " comida." + RESET);
                     System.out.println(GREEN + "Dinheiro restante: " + playerMoney + " moedas." + RESET);
                 } else {
-                    System.out.println(RED + "Voce nao tem dinheiro suficiente para comprar uma bolsa de pocoes!" + RESET);
+                    System.out.println(RED + "Voce nao tem dinheiro suficiente para comprar uma bolsa de comida!" + RESET);
                 }
                 store();
                 break;
@@ -251,7 +251,7 @@ public class RPG {
                 System.out.println(CYAN + "🍣 Comida na bolsa: " + playerFoods + RESET);
                 System.out.println(CYAN + "💖 Voce pode usar a comida para recuperar " + foodHealAmount + " de vida durante a sua aventura!" + RESET);
             } else {
-                System.out.println(YELLOW + "😺 Voce encontrou uma poção de cura, mas ja está com o inventário cheio!" + RESET);
+                System.out.println(YELLOW + "😺 Voce encontrou uma comida, mas ja está com o inventário cheio!" + RESET);
             }
         } else if (roll >= 5 && roll <= 9) {
             System.out.println(YELLOW + "😺 Voce encontrou " + attrValue + " moedas!" + RESET);
@@ -1074,7 +1074,7 @@ public class RPG {
         System.out.println("💨 Agilidade: " + playerAgility);
         System.out.println("🎲 Sorte: " + playerLuck);
         System.out.println("💰 Dinheiro: " + playerMoney + " moedas");
-        System.out.println("🍣 Poções de Cura: " + playerFoods + "/" + playerLimitFoods);
+        System.out.println("🍣 Comida: " + playerFoods + "/" + playerLimitFoods);
         System.out.println("\nEquipamentos:");
         System.out.println(" - " + playerArmorEquipped + " (Defesa: +" + playerArmor + ")");
         System.out.println(" - " + playerWeaponEquipped + " (Ataque: +" + playerWeapon + ")");
