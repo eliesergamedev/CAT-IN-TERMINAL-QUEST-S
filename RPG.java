@@ -47,7 +47,7 @@ public class RPG {
     public static final int playerHealthBase = 20; // Vida base do jogador
     public static int playerHealthMax = playerHealthBase; // Vida máxima do jogador
     public static int playerHealth = playerHealthMax; // Vida atual do jogador
-    public static int playerAgility = 4;
+    public static int playerAgility = 6;
     public static int playerLuck = 3;
     public static int playerAttack = 4;
     public static int playerDefense = 3;
@@ -112,14 +112,14 @@ public class RPG {
     public static final int impetuousCatAgility = 3;
 
     // Rato Feroz
-    public static final String fierceRatName = "Rato Feroz";
+    public static final String fierceRatName = "Rattus";
     public static final String fierceRatLabel = "🐭(Rato Feroz): ";
     public static final int fierceRatHealth = 20;
     public static final int fierceRatAttack = 10;
     public static final int fierceRatDefense = 5;
-    public static final int fierceRatExp = 100;
-    public static final int fierceRatMoney = 20;
-    public static final int fierceRatAgility = 4;
+    public static final int fierceRatExp = 160;
+    public static final int fierceRatMoney = 30;
+    public static final int fierceRatAgility = 1;
 
     // Coelho Selvagem
     public static final String wildRabbitName = "Coelho Selvagem";
@@ -149,7 +149,7 @@ public class RPG {
         String optionStore;
         int optionSelectedStore;
 
-        System.out.println("\n" + YELLOW + "---------------------- LOJA DO JOGO ----------------------------");
+        System.out.println("\n" + YELLOW + "---------------------- LOJA DO ESQUILO 🐿 ----------------------------");
         System.out.println("Bem-vindo a loja! O que voce gostaria de comprar?");
         System.out.println("1. Comida (5 moedas) 🍣 +" + foodHealAmount);
         System.out.println("2. Bolsa de comida: +1 espaco para pocoes (10 moedas) 🎒");
@@ -1136,6 +1136,8 @@ public class RPG {
         // Lógica de batalha aqui
         switch (menuBattle()) {
             case 1:
+                roll = random.nextDouble();
+
                 System.out.println(playerLabelTrusting + "Vou atacar!");
                 // Lógica de ataque aqui
                 if (firstAttack) {
@@ -1508,6 +1510,239 @@ public class RPG {
         store();
         System.out.println();
         pause();
-        
+
+        System.out.println(playerLabelTrusting + " Agora que estou mais forte, posso continuar minha jornada para encontrar os outros guerreiros da floresta.");
+        System.out.println(playerLabelIdle + " Com cada batalha, estou mais perto de alcancar a pedra magica e garantir a seguranca do mundo.");
+        System.out.println();
+        pause();
+
+        System.out.println(playerLabelIdle + " Olha! Mais adiante está um vilareijo, talvez eu consiga informações lá. Algo sobre os outros guerreiros.");
+        System.out.println();
+        pause();
+
+        villageScene("Vila dos Animais");
+        System.out.println();
+        pause();
+
+        System.out.println("🐰: Olá, viajante! Bem-vindo à Vila dos Animais. Posso ajudá-lo com algo?");
+        System.out.println();
+        pause();
+
+        System.out.println(playerName + " falou com vários moradores da vila, buscando informações sobre os outros guerreiros da floresta.");
+        System.out.println("Ele descobriu que os guerreiros estão espalhados por diferentes regiões da floresta, cada um guardando um desafio único.");
+        System.out.println("Com essas informações em mãos, " + playerName + " se preparou para continuar sua jornada.");
+        System.out.println();
+        pause();
+
+        System.out.println(playerLabelTrusting + " Obrigado pelas informações! Agora sei onde encontrar os outros guerreiros.");
+        System.out.println(playerLabelIdle + " Preciso seguir para o norte, agora mesmo!");
+        System.out.println();
+        pause();
+
+        d20 = randD20.nextInt(21); // Gera um número aleatório entre 0 e 20
+
+        if (d20 >= 15) {
+            System.out.println(PURPLE + "Voce encontrou uma caverna secreta na floresta!" + RESET);
+            pause();
+            caveScene("Sombria");
+            System.out.println();
+            pause();
+            explorer();
+            System.out.println();
+        }
+
+        System.out.println("Seguindo caminho, " + playerName + " se depara com uma cachoeira ao norte da vila.");
+        waterfallScene("Cristalina");
+        System.out.println();
+        pause();
+
+        System.out.println(playerLabelIdle + " A cachoeira e linda! Mas sera que tem algo escondido por aqui?");
+        System.out.println();
+        pause();
+
+        System.out.println(playerLabelTrusting + " Hora de continuar minha jornada em busca dos guerreiros da floresta!");
+        System.out.println();
+        pause();
+
+        System.out.println(playerName + " decide atravessar as aguas que caem da cachoreira, na esperança de encontrar pistas sobre os guerreiros da floresta.");
+
+        System.out.println(playerName + " encontra uma entrada secreta atras da cachoeira, levando a uma caverna misteriosa.");
+        caveScene("da cachoeira");
+        System.out.println();
+        pause();
+        explorer();
+
+        System.out.println();
+        System.out.println(playerLabelIdle + " encontra uma saida no fundo da caverna, levando a uma sala com um trono antigo.");
+        System.out.println(playerLabelIdle + " Sente que esta chegando perto de encontrar a pedra magica.");
+        System.out.println();
+        pause();
+
+        System.out.println(playerName + " avança com cautela, sabendo que desafios maiores ainda estao por vir.");
+        System.out.println("Vê diante de seus olhos se materializar um rato enorme, com armadura feita de pedaços de metal e olhos brilhantes.");
+        System.out.println("É o segundo guerreiro da floresta, pronto para testar a força e determinação de " + playerName + ".");
+        System.out.println();
+        pause();
+
+        System.out.println(fierceRatLabel + "SQUEAK! Quem ousa invadir meu dominio?");
+        pause();
+        System.out.println(playerLabelSurprised + "UM RATO GIGANTE FALANTE!");
+        pause();
+        System.out.println(playerLabelSurprised + "E ELE TAMBEM FALA A MINHA LINGUA!");
+        pause();
+        System.out.println(fierceRatLabel + "Eu sou Rattus, o defensor desta area da floresta. Se voce quer passar, tera que me derrotar em batalha!");
+        System.out.println(fierceRatLabel + "Mostre-me sua forca e determinacao, e talvez eu permita que voce continue sua jornada.");
+        pause();
+
+        battle(fierceRatName, fierceRatHealth, fierceRatAttack, fierceRatDefense, fierceRatAgility, fierceRatExp, fierceRatMoney);
+
+        System.out.println(playerLabelHappy + "Ufa! Consegui derrotar " + fierceRatName + "!");
+
+        System.out.println();
+
+        System.out.println("Derrepente a parede atras do trono se abre, revelando um corredor iluminado por cristais brilhantes.");
+        System.out.println(playerName + " sente que esta cada vez mais perto de encontrar a pedra magica.");
+        System.out.println("Com coragem renovada, ele avanca pelo corredor, pronto para enfrentar os desafios que ainda o aguardam.");
+        System.out.println();
+        pause();
+
+        System.out.println(playerLabelIdle + " Tem um luz no final desse corredor.");
+        System.out.println(playerLabelIdle + " Era uma clareira!");
+        gladeScene("Dos Guerreiros Ancestrais");
+        System.out.println();
+        pause();
+
+        System.out.println(playerLabelTrusting + " O que são aquelas 3 estatuas?");
+        System.out.println();
+        pause();
+
+        System.out.println("🐿: Acho que vem chumbo grosso por aí! Quer fazer uma pausa e adquirir alguns produtos, antes de seguir com a sua jornada?");
+        store();
+        System.out.println();
+        pause();
+
+        System.out.println(playerLabelTrusting + " Ei! tem uma caverna ao lado daquela árvore gigante.");
+        System.out.println(playerLabelTrusting + " Talvez seja prudente eu explorar essa caverna antes de seguir em frente.");
+        caveScene("da clareira");
+        System.out.println();
+        pause();
+        explorer();
+
+        System.out.println();
+        System.out.println(playerLabelIdle + " Agora sim! Posso examinar aquela estatuas com calma.");
+        System.out.println(playerLabelIdle + " Elas parecem representar os guerreiros ancestrais da floresta.");
+        System.out.println();
+        pause();
+
+        System.out.println("Então, derrepente a primeira estatua racha de cima a baixo!");
+        System.out.println("Um urso enorme, com cicatrizes de batalhas passadas, emerge da estatua.");
+        System.out.println("É o terceiro guerreiro da floresta, pronto para testar a força e determinação de " + playerName + ".");
+        System.out.println();
+        pause();
+
+        System.out.println("🐻: GRRRR! Quem ousa perturbar meu descanso?");
+        System.out.println();
+        pause();
+        System.out.println(playerLabelSurprised + "UM URSO GIGANTE!");
+        System.out.println(playerLabelIdle + "Você deve ser um dos guerreiros da floresta.");
+        pause();
+        System.out.println(playerLabelTrusting + "Eu sou " + playerName + ", estou aqui para impedir que a pedra magica caia em maos erradas.");
+        pause();
+        System.out.println("🐻: Eu sou Baloo, para alcancar a pedra você deve mostrar que pode me vencer!");
+        pause();
+
+        battle("Baloo, o Urso Guerreiro", 30, 12, 6, 1, 180, 40);
+
+        System.out.println(playerLabelHappy + "Ufa! Consegui derrotar Baloo!");
+        System.out.println();
+        pause();
+
+        System.out.println("Derrepente a segunda estatua racha de cima a baixo!");
+        System.out.println("Uma aguia majestosa, com penas reluzentes e olhos penetrantes, emerge da estatua.");
+        System.out.println("O quarto guerreiro da floresta, pronto para testar a força e determinação de " + playerName + ".");
+        System.out.println();
+        pause();
+
+        System.out.println("🦅: SCREEE! Quem ousa invadir meu dominio?");
+        pause();
+        System.out.println(playerLabelSurprised + "UMA AGUIA GIGANTE!");
+        pause();
+        System.out.println("🦅: Eu sou Aquila, o guardiao da padra magica.");
+        System.out.println("🦅: Somente aqueles que provarem sua forca e determinacao, podera conquistar a pedra magica.");
+        pause();
+
+        battle("Aquila, a Aguia Guerreira", 25, 15, 5, 1, 290, 50);
+        System.out.println(playerLabelHappy + "Ufa! Consegui derrotar Aquila!");
+
+        System.out.println("🐿: Eii! Vou te dar mais oportunidade de conseguir comprar alguma coisa, antes que surja outra criatura!");
+        store();
+        System.out.println();
+        pause();
+
+        System.out.println(playerLabelTrusting + " Finalmente, cheguei ao local onde a pedra magica esta escondida.");
+        System.out.println(playerLabelSurprised + " MAS! COMO ASSIM?");
+        System.out.println(playerLabelSurprised + " Esse lugar está vazio...");
+        System.out.println();
+        pause();
+
+        System.out.println("De repente, o lugar começa a mudar de forma.");
+        System.out.println("O vento fica mais forte, as arvores se curvam e uma figura misteriosa aparece diante de " + playerName + ".");
+        System.out.println("É o verdadeiro guardiao da pedra magica, testando a coragem e determinação de " + playerName + ".");
+        System.out.println();
+        pause();
+
+        ancienttreeScene("Ancestral");
+        System.out.println();
+        pause();
+
+        System.out.println("🌳: " + " Quem ousa desafiar o guardiao da pedra magica?");
+        pause();
+        System.out.println(playerLabelSurprised + "UMA ARVORE GIGANTE FALANTE!");
+        pause();
+        System.out.println("🌳: " + " Eu sou a Arvore Ancestral, protetora desta floresta e da pedra magica.");
+        System.out.println("🌳: " + " Somente aqueles que provarem sua forca, sabedoria e coracao puro, podera conquistar a pedra magica.");
+        pause();
+
+        battle("Arvore Ancestral", 50, 20, 10, 2, 250, 100);
+
+        System.out.println(playerLabelHappy + "Ufa! Consegui derrotar a Arvore Ancestral!");
+        pause();
+
+        System.out.println("🌳: " + " Agora a pedra sera sua. O que voce deseja fazer?");
+        System.out.println();
+        System.out.println(playerLabelIdle + " Eu quero destruir essa pedra. Isso para que nao caia em maos erradas.");
+        pause();
+        System.out.println("🌳: " + " Voce e verdadeiramente digno. De coração puro.");
+        System.out.println("🌳: " + " A pedra magica sera destruida, e o equilibrio da floresta sera mantido.");
+        System.out.println("🌳: " + " Assim será feito!");
+        System.out.println("🌳: " + " DEEESTRUAAA-SEEEE!");
+        pause();
+        System.out.println("                 ________           ________");
+        System.out.println("              .-'        '-.     .-'        '-.");
+        System.out.println("             /              \\   /              \\");
+        System.out.println("            /                \\ /                \\");
+        System.out.println("           /                  |                  \\");
+        System.out.println("          /                   |                   \\");
+        System.out.println("         /                    |                    \\");
+        System.out.println("        /                     |                     \\");
+        System.out.println("       /                      |                      \\");
+        System.out.println("      /                       |                       \\");
+        System.out.println("     /                        |                        \\");
+        System.out.println("    /                         |                         \\");
+        System.out.println("   /___________________________|__________________________\\");
+        System.out.println("   \\___________________________|__________________________/");
+        System.out.println("    \\                        / \\                        /");
+        System.out.println("     \\                      /   \\                      /");
+        System.out.println("      \\____________________/     \\____________________/");
+        System.out.println();
+        pause();
+
+        System.out.println(playerLabelLovely + " A pedra magica foi destruida! O equilibrio da floresta esta salvo.");
+        System.out.println(playerLabelHappy + " Minha jornada foi cheia de desafios, mas tambem de aprendizado e crescimento.");
+        System.out.println(playerLabelTrusting + " Agora, posso voltar para casa, sabendo que fiz a coisa certa.");
+        System.out.println();
+        pause();
+
+        System.out.println(GREEN + "Obrigado por jogar! Ate a proxima aventura!" + RESET);
     }
 }
